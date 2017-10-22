@@ -8,14 +8,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
     <link rel="stylesheet" href="src/css/index.css" type="text/css" />
     <link rel="stylesheet" href="src/css/carousel.css" type="text/css" />
+    <link rel="stylesheet" href="src/css/catalog.css" type="text/css" />
     <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://www.jq22.com/jquery/bootstrap-3.3.4.js"></script>
+    <script src="src/js/canvas.js"></script>
     <title>AnneCoder代码小仙女</title>
   </head>
 
   <body>
-    
     <div class="header">
       <nav class="navbar navbar-fixed-top navbar-inverse">
         <div class="container">
@@ -26,27 +31,26 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">AnneCoder的博客</a>
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">主页</a></li>
-              <li><a href="#about">博客</a></li>
-              <li><a href="#about">游戏</a></li>
-              <li><a href="#about">杂记</a></li>
-              <li><a href="#contact">管理</a></li>
+              <li><a href="index.html">AnneCoder的博客</a></li>
+              <li><a href="#">文章</a></li>
+              <li><a href="#about">工作</a></li>
+              <li><a href="#about">学习</a></li>
+              <li><a href="#contact">娱乐</a></li>
             </ul>
             <form class="navbar-form navbar-right">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="请输入关键词">
-              </div>
-              <button type="submit" class="btn btn-default"  align="right"><span class="glyphicon glyphicon-search"></span></button>
-              <button type="submit" class="btn btn-default"  align="right"><span class="glyphicon glyphicon-pencil"></span></button>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="请输入关键词...">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">Go!</button>
+                </span>
+              </div><!-- /input-group -->
             </form>
-          </div><!-- /.nav-collapse -->
-          
-        </div><!-- /.container -->
-      </nav><!-- /.navbar -->
+          </div>
+        </div>
+      </nav>
     </div>
     
     <div class="container">
@@ -68,7 +72,13 @@
                 </div>
               </div>
               <div class="item">
-                <img src="http://www.wallcoo.com/nature/Amazing_Color_Landscape_2560x1600/wallpapers/1600x900/Amazing_Landscape_25.jpg" alt="...">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508646157432&di=c4e119a75185040227db3c1965ef8d1d&imgtype=0&src=http%3A%2F%2Fpic.90sjimg.com%2Fback_pic%2Fqk%2Fback_origin_pic%2F00%2F04%2F08%2F2ba3e253e19197b965a9a24d7b9c0a6b.jpg" alt="...">
+                <div class="carousel-caption">
+                    <span class="sr-only">Previous</span>
+                </div>
+              </div>
+              <div class="item">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1508635980&di=9a21d476377b94459f1c3062ff5d409a&src=http://pic.90sjimg.com/back_pic/qk/back_origin_pic/00/03/29/a24d8bf99fb8472c836e05a335f6a600.jpg" alt="...">
                 <div class="carousel-caption">
                     <span class="sr-only">Previous</span>
                 </div>
@@ -87,41 +97,94 @@
 
           <div class="row">
             <div class="col-xs-6 col-lg-4">
-              <h2>简历制作 <a href="#">&raquo;</a></h2>
+              <h3>简历制作 <a href="resume/addResume.html">&raquo;</a></h3>
               <p>程序员专属简历模板</p>
+              <!-- <p>热门 动画 设计</p>
+              <p>清新 治愈 专业</p> -->
             </div>
             <div class="col-xs-6 col-lg-4">
-              <h2>技术社区  <a href="#">&raquo;</a></h2>
+              <h3>技术社区  <a href="#">&raquo;</a></h3>
               <p>活跃的技术讨论</p>
             </div>
             <div class="col-xs-6 col-lg-4">
-              <h2>干货储备  <a href="#">&raquo;</a></h2>
+              <h3>干货储备  <a href="#">&raquo;</a></h3>
               <p>技多不压身</p>
             </div>
             <div class="col-xs-6 col-lg-4">
-              <h2>热门站点 <a href="#">&raquo;</a></h2>
+              <h3>热门站点 <a href="#">&raquo;</a></h3>
               <p>热门技术站点</p>
             </div>
             <div class="col-xs-6 col-lg-4">
-              <h2>在线游戏 <a href="#">&raquo;</a></h2>
+              <h3>在线游戏 <a href="#">&raquo;</a></h3>
               <p>博主自编小游戏</p>
             </div>
             <div class="col-xs-6 col-lg-4">
-              <h2>源码下载 <a href="#">&raquo;</a></h2>
+              <h3>源码下载 <a href="#">&raquo;</a></h3>
               <p>热门技术源码、博主学习源码</p>
             </div>
           </div>
         </div>
 
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
-          <div class="list-group">
-            <a href="#" class="list-group-item active">目录</a>
-            <a href="http://blog.csdn.net/annecoder/article/details/78229052" class="list-group-item">String相关运算</a>
-            <a href="http://blog.csdn.net/annecoder/article/details/78230000" class="list-group-item">Spring Boot注解</a>
-            <a href="http://blog.csdn.net/annecoder/article/details/78237477" class="list-group-item">JAVA代码优化方法</a>
-            <a href="http://blog.csdn.net/annecoder/article/details/78279002" class="list-group-item">html相关问题汇总</a>
-            <a href="http://blog.csdn.net/annecoder/article/details/78267742" class="list-group-item">Web前端笔试题</a>
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <h3>热门博文 <a href="http://blog.csdn.net/anneCoder">&raquo;</a></h3>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> String相关运算 </a> </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <p>正则表达式 类型转化 日期</p>
+                  <a href="http://blog.csdn.net/annecoder/article/details/78229052">查看详情</a>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Spring Boot注解 </a> </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  <p>@responseBody @RequestBody</p>
+                  <a href="http://blog.csdn.net/annecoder/article/details/78230000">查看详情</a>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> JAVA代码优化方法 </a> </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <p>StringBuilder  避免递归 where子句优化</p>
+                  <a href="http://blog.csdn.net/annecoder/article/details/78237477">查看详情</a>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> html相关问题汇总 </a> </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body">
+                  <p>div内容置为空 select选项操作</p>
+                  <a href="http://blog.csdn.net/annecoder/article/details/78279002">查看详情</a>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFive">
+                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> Web前端笔试题 </a> </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                <div class="panel-body">
+                  <p>CSS 其他</p>
+                  <a href="http://blog.csdn.net/annecoder/article/details/78267742">查看详情</a>
+                </div>
+              </div>
+            </div>
           </div>
+
         </div><!--/.sidebar-offcanvas-->
       </div><!--/row-->
 
@@ -133,15 +196,7 @@
 
     </div><!--/.container-->
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="offcanvas.js"></script>
+    
+    
   </body>
 </html>

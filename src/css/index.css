@@ -1,5 +1,8 @@
 .header {
     margin: 70px 30px 30px 20px;
     border-top-width: 70px;
-    background-color: blanchedalmond;
+    background-color: white;
+}
+.navbar-form {
+    border-color: white;
 }
